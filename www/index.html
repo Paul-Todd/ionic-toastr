@@ -28,10 +28,138 @@
   <body ng-app="starter">
 
     <ion-pane ng-controller="ToastCtrl">
-      <ion-header-bar class="bar-stable">
+      <ion-header-bar class="bar-positive">
         <h1 class="title">Ionic Blank Starter</h1>
       </ion-header-bar>
-      <ion-content >
+      <div class="bar bar-subheader bar-light">
+        <h2 class="title">Configure Toasts</h2>
+      </div>
+      <ion-content class="has-subheader">
+          <div class="list">
+              <!-- Text in toast -->
+              <div class="item item-divider dark-bg light">
+                  Toast Text
+              </div>
+              <label class="item item-input">
+                  <input type="text" placeholder="Text" ng-model="toast.text">
+              </label>
+              <label class="item item-input">
+                  <input type="text" placeholder="Title" ng-model="toast.title">
+              </label>
+
+          <!-- Types of toasts -->
+            <div class="item item-divider dark-bg light">
+              Type
+            </div>
+
+            <!-- Success -->
+            <label class="item item-radio">
+              <input type="radio" name="toastType" ng-model="toast.type" value="success">
+              <div class="item-content">
+                Success
+              </div>
+              <i class="radio-icon ion-checkmark balanced"></i>
+            </label>
+            <!-- Info -->
+            <label class="item item-radio">
+              <input type="radio" name="toastType" ng-model="toast.type" value="info">
+              <div class="item-content">
+                Info
+              </div>
+              <i class="radio-icon ion-checkmark calm"></i>
+            </label>
+            <!-- Warning -->
+            <label class="item item-radio">
+              <input type="radio" name="toastType" ng-model="toast.type" value="warning">
+              <div class="item-content">
+                Warning
+              </div>
+              <i class="radio-icon ion-checkmark energized"></i>
+            </label>
+            <!-- Error -->
+            <label class="item item-radio">
+              <input type="radio" name="toastType" ng-model="toast.type" value="error">
+              <div class="item-content">
+                Error
+              </div>
+              <i class="radio-icon ion-checkmark assertive"></i>
+            </label>
+
+            <div class="item item-divider dark-bg light">
+              Position
+            </div>
+            <!-- Top Right -->
+            <label class="item item-radio">
+              <input type="radio" name="toastPosition" ng-model="toast.position" value="toast-top-right">
+              <div class="item-content">
+                Top Right
+              </div>
+              <i class="radio-icon ion-checkmark"></i>
+            </label>
+
+              <!-- Bottom Right -->
+            <label class="item item-radio">
+              <input type="radio" name="toastPosition" ng-model="toast.position" value="toast-bottom-right">
+              <div class="item-content">
+                Bottom Right
+              </div>
+              <i class="radio-icon ion-checkmark"></i>
+            </label>
+
+              <!-- Bottom Left -->
+            <label class="item item-radio">
+              <input type="radio" name="toastPosition" ng-model="toast.position" value="toast-bottom-left">
+              <div class="item-content">
+                Bottom Left
+              </div>
+              <i class="radio-icon ion-checkmark"></i>
+            </label>
+
+              <!-- Top Left -->
+            <label class="item item-radio">
+              <input type="radio" name="toastPosition" ng-model="toast.position" value="toast-top-left">
+              <div class="item-content">
+                Top Left
+              </div>
+              <i class="radio-icon ion-checkmark"></i>
+            </label>
+
+              <!-- Top Full Width -->
+            <label class="item item-radio">
+              <input type="radio" name="toastPosition" ng-model="toast.position" value="toast-top-full-width">
+              <div class="item-content">
+                Top Full Width
+              </div>
+              <i class="radio-icon ion-checkmark"></i>
+            </label>
+
+              <!-- Bottom Full Width -->
+            <label class="item item-radio">
+              <input type="radio" name="toastPosition" ng-model="toast.position" value="toast-bottom-full-width">
+              <div class="item-content">
+                Bottom Full Width
+              </div>
+              <i class="radio-icon ion-checkmark"></i>
+            </label>
+
+              <!-- Top Center -->
+            <label class="item item-radio">
+              <input type="radio" name="toastPosition" ng-model="toast.position" value="toast-top-center">
+              <div class="item-content">
+                Top Center
+              </div>
+              <i class="radio-icon ion-checkmark"></i>
+            </label>
+
+              <!-- Bottom Center -->
+            <label class="item item-radio">
+              <input type="radio" name="toastPosition" ng-model="toast.position" value="toast-bottom-center">
+              <div class="item-content">
+                Bottom Center
+              </div>
+              <i class="radio-icon ion-checkmark"></i>
+            </label>
+          </div>
       </ion-content>
     </ion-pane>
   </body>
