@@ -1,0 +1,33 @@
+/*
+We set a specificity to the toast so the ionic definitions override the default ones declared
+in the css file.
+
+We map the background color to the standard ionic palette
+
+*/
+.platform-ios, .platform-android {
+
+  .toast {
+    background-color: $light;
+  }
+
+  .toast-success {
+    background-color: $balanced;
+  }
+
+  .toast-error {
+    background-color: $assertive;
+  }
+
+  .toast-info {
+    background-color: $calm;
+  }
+
+  .toast-warning {
+    background-color: $energized;
+  }
+
+  .toast-progress {
+    background-color: $dark;
+  }
+}
