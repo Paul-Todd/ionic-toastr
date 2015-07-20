@@ -17,3 +17,6 @@ angular.module('starter', ['ionic', 'ngAnimate', 'toastr'])
     }
   });
 })
+.controller('ToastCtrl', ['toastr', function(toastr) {
+      toastr.success('Hello world!', 'Toastr fun!');
+}]);
