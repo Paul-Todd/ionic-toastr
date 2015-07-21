@@ -17,24 +17,28 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/Paul-Todd/angular-toastr.git"
+    "url": "git@github.com:Paul-Todd/ionic-toastr.git"
   },
+  "homepage": "https://github.com/Paul-Todd/angular-toastr.git",
+
   "main": [
-    "scss/ionic-toastr.scss"
+    "dist/ionic-toastr.scss"
   ],
   "dependencies": {
-    "angular-toastr": "~1.4.1"
-  },
-  "devDependencies": {
+    "angular-toastr": "~1.4.1",
     "ionic": "driftyco/ionic-bower#1.0.1"
   },
+  "devDependencies": {
+
+  },
+
   "ignore": [
     "hooks",
     "node_modules",
     "platforms",
     "plugins",
     "www",
-    "scss/ionic.app.scss",
+    "scss",
     ".gitignore",
     "CHANGELOG.md",
     "bowerrc",
