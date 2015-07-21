@@ -16,14 +16,22 @@ Follow the instructions on the [angular-toastr](https://github.com/Foxandxss/ang
 
 When your application is running and toasts are being displayed then it is time to change the colours of the toasts to match the ionic color palette.
 
-The process is very simple:
 
 ## Coding time
 
-Open scss/ionic.app.scss and after the import for the ionic scss files, add the import for ionic-toastr.scss
+The process is very simple:
+
+
+Add the ionic-toastr to the project using bower
+
+```javascript
+bower install ionic-toastr --save
+```
+
+Open scss/ionic.app.scss and after the import for the ionic scss files, add the import for **ionic-toastr.scss**
 
 ```scss
-@import "<location of ionic-toastr.scss>/ionic-toastr.scss";
+@import "<bower folder>/ionic-toastr/dist/ionic-toastr.scss";
 ```
 
 Remember then to recompile the scss file using 
@@ -34,6 +42,14 @@ gulp sass
 ```
 
 on the command line.
+
+
+
+### Alternative installation
+
+It is of course also possible to just copy the **dist/ionic-toastr.scss** to the ionic application's scss folder and then add the import to the ionic.app.scss as well since the changes are very small.
+
+
 
 ## Source Project
 
