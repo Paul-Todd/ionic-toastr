@@ -7,6 +7,8 @@
       "email": "waterishail@gmail.com"
     }
   ],
+  "homepage": "https://github.com/Paul-Todd/angular-toastr.git",
+
   "keywords": [
     "angular",
     "angularjs",
@@ -14,19 +16,21 @@
     "toastr",
     "ionic"
   ],
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:Paul-Todd/ionic-toastr.git"
-  },
-  "homepage": "https://github.com/Paul-Todd/angular-toastr.git",
 
   "main": [
     "dist/ionic-toastr.scss"
   ],
+
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Paul-Todd/ionic-toastr.git"
+  },
+
   "dependencies": {
     "angular-toastr": "~1.4.1",
     "ionic": "driftyco/ionic-bower#1.0.1"
   },
+
   "devDependencies": {
 
   },
@@ -39,12 +43,12 @@
     "www",
     "scss",
     ".gitignore",
-    "CHANGELOG.md",
     "bowerrc",
     "bower.json",
     "ionic.project",
     "config.xml",
     "gulpfile.js",
-    "package.json"
+    "package.json",
+    ".bowerrc"
   ]
 }
